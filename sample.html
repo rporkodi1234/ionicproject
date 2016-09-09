@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+.user-form { padding:20px; }
+
+.user-form .field { padding: 4px; background: #eee; }
+
+.user-form .field label { display:block; width:120px;}
+.user-form .field input { display:block; }
+.user-form .field input { display:block; }
+
+
+</style>
+</head>
+<body>
+<div style="width:800px; margin:0 auto;">
+<form class="user-form">
+    <div class="field">
+        <label for="firstname">First Name:</label>
+		<input id="firstname" name="firstname" placeholder="Enter First name" type="text" size="30"
+			pattern="[a-zA-Z]+" style="border-radius:7px; border:2px solid #dadada;" required autofocus/>        
+    </div>
+    <div class="field">
+        <label for="mobilenumber">Mobile number:</label>
+<input id ="mobilenumber" name="mobilenumber" type="text" placeholder="Enter Mobile Number" size="30"
+		pattern="[0-9]+" style="border-radius:7px; border:2px solid #dadada;" required/>
+
+    </div>
+ <div class="field">
+        <label for="Email address">Email address:</lable>
+<input id="emailaddress" name="emailaddress" type="email" placeholder="Enter Email Address" type="text" size="30"
+style="border-radius:7px; border:2px solid #dadada;" required/>
+</div>
+
+<div class="field">
+        <label for="password">Password:</label>
+<input id="password" name="password" type="password" placeholder="Enter Password" type="text" size="30"
+style="border-radius:7px;border:2px solid #dadada;" required/>
+</div>
+
+<div class="field">
+        <label for="State">State:</lable>
+<input type="text" list="countries" name="mycountry" value="" placeholder="country select"  type="text" size="30" 
+style="border-radius:7px; border:2px solid #dadada;"required/>
+<datalist id="countries">
+	<option value="India">India</option>
+	<option value="United States">United States</option>
+	<option value="United Kingdom">United Kingdom</option>
+	<option value="Germany">Germany</option>
+	<option value="France">France</option>
+</datalist>
+<button onclick="myFunction()">SignUp </button> </div>
+
+</form>
+</div>
+</body>
+</html>

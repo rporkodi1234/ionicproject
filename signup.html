@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+ <head>
+ <body>
+ <script>
+function myFunction() {
+    alert("Hello! login successful");
+}
+</script>
+ <center>
+ <form action="">
+
+<div align="right"></div>
+Name : <br>
+
+<input id="firstname" name="firstname" placeholder="Enter First name" type="text" pattern="[a-zA-Z]+"style="border-radius:7px; border:2px solid #dadada;" required/>
+
+<br/>
+
+Mobile number:<br>
+<input id ="mobilenumber" name="mobilenumber" type="number" placeholder="Enter Mobile Number"  style="border-radius:7px; border:2px solid #dadada;" required/>
+ <br><br/>
+  
+Email address:<br>
+<input id="emailaddress" name="emailaddress" type="email" placeholder="Enter Email Address" style="border-radius:7px; border:2px solid #dadada;" required/>
+
+<br><br/>
+
+Password:<br>
+   
+<input id="password" name="password" type="password" placeholder="Enter Password" style="border-radius:7px;border:2px solid #dadada;" required/>
+<br><br/>
+
+Country:<br>
+ 
+<input type="text" list="countries" name="mycountry" value="" placeholder="country select" style="border-radius:7px; border:2px solid #dadada;">
+
+    <datalist id="countries">
+	<option value="India">India</option>
+	<option value="United States">United States</option>
+	<option value="United Kingdom">United Kingdom</option>
+	<option value="Germany">Germany</option>
+	<option value="France">France</option>
+</datalist>
+
+<br><br/>
+
+<button onclick="myFunction()">sign In </button>
+
+</form>
+ 
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+}
+</script>
+ </center>
+ </head>
+</body>
